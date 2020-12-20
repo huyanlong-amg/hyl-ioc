@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red {
+            color: blueviolet;
+        }
+
+        /*去掉链接下面的下划线*/
+        a {
+            text-decoration: none;
+        }
+
+        /*后代选择器*/
+        ol li {
+            color: pink;
+        }
+
+        /*子元素选择器  注意声明方式，.xxx 的调用是需要在元素里面calss调用的， 还以直接用元素声明的css， 还有就是用#xxx 生命的需要在标签看面有id的属性来调用*/
+        .nav>a {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+    <li>我是一条鱼</li>
+    <li>你是一只猪</li>
+    <li>我就知道</li>
+</ol>
+    <drv class="nav">
+        <a href="#">我是子</a>
+        <p>
+            <a href="#">我是孙</a>
+        </p>
+    </drv>
+</body>
+</html>
